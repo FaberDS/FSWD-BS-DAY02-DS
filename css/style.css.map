@@ -1,11 +1,7 @@
 {
 "version": 3,
-<<<<<<< HEAD
-"mappings": "AACC,iBAAQ;EACP,MAAM,EAAE,eAAe",
-=======
-"mappings": "AAGC,iBAAQ,GACP,MAAM,EAAE,eAAe",
->>>>>>> 4bb16e3b144f63e628161b668d4f55bbeb0c4bf6
-"sources": ["../sass/style.sass"],
+"mappings": "",
+"sources": [],
 "names": [],
 "file": "style.css"
 }

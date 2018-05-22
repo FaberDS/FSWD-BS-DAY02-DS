@@ -7,6 +7,7 @@ var VehicleData=[
                  "Power": 63,
                  "Fuel": "Benzin",
                  "Seats": 5,
+                 "ID": "001",
                  "Price": 2.999,
                  "Image": "img/seat.jpg"
                },
@@ -18,6 +19,7 @@ var VehicleData=[
                  "Power": 9,
                  "Fuel": "Benzin",
                  "Seats": 2,
+                 "ID": "003",
                  "Price": 2.390,
                  "Image": "img/yamaha.jpg"
                },
@@ -29,6 +31,7 @@ var VehicleData=[
                  "Power": 84,
                  "Fuel": "Diesel",
                  "Seats": 4,
+                 "ID": "004",
                  "Price": 16.950,
                  "Image": "img/Renault.jpg",
                  "Maxload":2.800
@@ -42,8 +45,9 @@ var VehicleData=[
                  "Power": 84,
                  "Fuel": "Diesel",
                  "Seats": 5,
+                 "ID": "005",
                  "Price": 2.460,
-                 "Image": "img/Renault.jpg",
+                 "Image": "img/Peugeot.jpg",
                  "Maxload":3.000
                },
                 {"Category": "Car",
@@ -54,6 +58,7 @@ var VehicleData=[
                  "Power": 80,
                  "Fuel": "Diesel",
                  "Seats": 5,
+                 "ID": "006",
                  "Price": 27.500,
                  "Image": "img/Mercedes-Benz.jpg"
                  },
@@ -65,6 +70,7 @@ var VehicleData=[
                  "Power": 60,
                  "Fuel": "Benzin",
                  "Seats": 5,
+                 "ID": "007",
                  "Price": 9.900,
                  "Image": "img/Citroën.jpg"
                  }                                           

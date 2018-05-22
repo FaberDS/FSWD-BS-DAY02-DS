@@ -3,10 +3,15 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>App of Vehicles | Matthias liszt, Dominic Wieser</title>
+	<title>Autoscout</title>
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	
 	<!-- General CSS -->
 	<link rel="stylesheet" href="css/style.css">
@@ -16,15 +21,7 @@
 <body>
 
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 align">
-				<h1>Buy</h1>
-			</div>
-			<div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="space">
-				<!-- EMPTY -->
-			</div>	
-		</div>
-
+		
 		<div class="row">
 			<div class="col-lg-12 align col-md-12 col-sm-12 col-xs-12">
 				<div class="btn-group btn-group-lg special" role="group" aria-label="...">
@@ -32,20 +29,55 @@
 					<button type="button" class="btn btn-default" onclick="Output('Motor')">Bike</button>
 					<button type="button" class="btn btn-default" onclick="Output('Van')">Van</button>
 					<button type="button" class="btn btn-default" onclick="Output('LKV')">LKW</button>
+					<button type="button" class="btn btn-default" onclick="Output('LKV')">LKW</button>
 				</div>
 			</div>
 		</div>
+		<div class="navbar" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle lead" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sort <span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="filterOptions">
+                        	<li><p>Fuel</p></li>
+                            <li><a class="filter all active" href="#" id="all" data="all" >ALL</a></li>
+                            <li><a class="filter Diesel" href="#" id="book">Diesel</a></li>
+                            <li><a class="filter Benzin" href="#" id="game">Benzin</a></li>
+                            
+                        </ul>
+                    </li>
+                   <!--  <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon-glyphicon-search"></i> Detailed Sorting<span class="caret"></span></a>
+                        <ul class="dropdown-menu" id="filterOptions">
+                            <li><a class="filter all active" href="#" id="all" data="all">ALL</a></li>
+                            <li><a class="filter books" href="#" id="book">Title</a></li>
+                            <li><a class="filter games" href="#" id="game">Genre</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="" href="#" id="likeSortBtn">Like's</a></li>
+                            
+                        </ul> -->
+                    </li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                    </li>
+                </ul>
+            </div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 hidden-sm hidden-xs" id="space">
+				<!-- EMPTY -->
+			</div>	
+		</div>
+
 	</div>
+
 	<div class="container" id="output">
 		<!-- OUTPUT FROM script.js -->
 	</div>
 	
 
-	<!-- JQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
 
 	<!-- General JS -->
 	<script src="js/script.js" type="text/javascript"></script>
