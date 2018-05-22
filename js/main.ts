@@ -38,17 +38,20 @@ class Vehicles implements VehicleInter{
    }
 } 
 
-interface LKWInter{
-		maxLoad : number;
-		achses: number;
-}
+// interface LKWInter{
+// 		maxLoad : number;
+// 		achses: number;
+// }
 
-class Lkw extends Vehicles implements LKWInter{
-	constructor( public name, public hp, public release, public km, public img, public maxLoad, public achses) {
-		super(name, hp, release, km, img);	
-		return super.tryIt() + this.maxLoad+ this.achses;
-   } 
-}
+// class Lkw extends Vehicles implements LKWInter{
+// 	constructor( public name, public hp, public release, public km, public img, public maxLoad, public achses) {
+// 		super(name, hp, release, km, img);	
+// 		super.tryIt() var detail = document.createElement("p")
+//         detail.className = "detail"
+//         detail.innerHTML = this.achses
+//         box.appendChild(detail);
+//    } 
+// }
 
 
 
@@ -59,3 +62,4 @@ var scania = new Vehicles("X5", 100, 1999, 20000, "https://images.pexels.com/pho
 bmw.tryIt();
 golf.tryIt();
 scania.tryIt();
+var cars = [golf, bmw, scania];
