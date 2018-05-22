@@ -1,57 +1,35 @@
 
 
 interface VehicleInter{
-	name: string;
-	hp: number;
-	release: number;
-	km: number;
-	img : string;
+	Vtype: string;
+	Vmodel: string;
+	Vhp: number;
+	Vrelease: number;
+	Vkm: number;
+	Vimg : string;
+	Vprice : number;
+	Vdescription: string;
+	Vfuel : string;
+	Vseats : number;
 }
 class Vehicles implements VehicleInter{
 
-	constructor( public name, public hp, public release, public km, public img) {
+	constructor(public Vtype, public Vmodel, public Vhp, public Vrelease, public Vkm, public Vimg, public Vprice, public Vdescription, public Vfuel, public Vseats) {
 
    }       
-   tryIt(): void {
-   		
-   		var con = document.getElementById("content");
-        var box = document.createElement("div");
-        box.className = "element";
-        con.appendChild(box);
-
-        var hlMenu = document.createElement("h1");
-        hlMenu.className = "hlMenu";
-        hlMenu.innerHTML = this.name;
-        box.appendChild(hlMenu);
-
-        var imgContainer = document.createElement("div");
-        imgContainer.className = "images";
-        var image = document.createElement("img");
-        image.src = this.img;
-        
-        imgContainer.appendChild(image);
-        box.appendChild(imgContainer);
-
-
-
-     // console.log(this.name);
-   }
+   
 } 
 
-// interface LKWInter{
-// 		maxLoad : number;
-// 		achses: number;
-// }
+interface LKWInter{	
+		LmaxLoad: number;
+}
 
-// class Lkw extends Vehicles implements LKWInter{
-// 	constructor( public name, public hp, public release, public km, public img, public maxLoad, public achses) {
-// 		super(name, hp, release, km, img);	
-// 		super.tryIt() var detail = document.createElement("p")
-//         detail.className = "detail"
-//         detail.innerHTML = this.achses
-//         box.appendChild(detail);
-//    } 
-// }
+class Lkw extends Vehicles implements LKWInter{
+	constructor(public Vtype, public Vmodel, public Vhp, public Vrelease, public Vkm, public Vimg, public Vprice, public Vdescription, public Vfuel, public Vseats, public LmaxLoad) {
+		super(Vtype, Vmode, Vhp, Vrelease, Vkm Vimg, Vprice, Vdescription, Vfuel, Vseats);	
+		
+   } 
+}
 
 
 
